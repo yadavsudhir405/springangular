@@ -5,3 +5,6 @@ spring:
   devtools:
     restart:
       exclude: /META-INF/resources
+      trigger-file:
+
+
