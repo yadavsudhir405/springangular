@@ -136,6 +136,7 @@ frontend/target
 frontend/dist
 frontend/node_modules
 frontend/node
+.DS_Store
 
 
 # Yarn Integrity file
