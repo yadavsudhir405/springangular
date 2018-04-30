@@ -4,13 +4,13 @@ var gulp = require("gulp"),
 gulp.task("watch",["watchFrontEndChanges","detectDistChanges"]);
 
 gulp.task("watchFrontEndChanges", function () {
-    return  gulp.watch('src/app/**/*',['triggerBuild'])
+    return  gulp.watch('src/**/*',['triggerBuild'])
 });
 
 gulp.task("triggerBuild", function () {
     console.log("Detected Changes");
     var options = {
-        continueOnError: false, // default = false, true means don't emit error event
+        continueOnError: false,
     };
     var reportOptions = {
         err: true, // default = true, false means don't write err
