@@ -1,0 +1,38 @@
+// extend example
+.message {
+  border: 1px solid #CCC;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+ @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+//nested example
+
+nav{
+  ul{
+      margin: 10px;
+      padding: 1px;
+      list-style: none;
+  }
+  li{
+      margin: 5px;
+      padding: 2px;
+  }
+  a{
+    text-decoration: solid;
+  }
+}

@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /app/v1
+spring:
+  devtools:
+    restart:
+      exclude: /META-INF/resources

@@ -1,0 +1,64 @@
+<div class= "panel panel-primary" *ngIf= "product">
+  <div class="panel-heading">
+    {{pageTitle  + ':' + product.productName}}
+  </div>
+  <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-3">
+              Id:
+            </div>
+            <div class="col-lg-5">
+              {{product.productId}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              Name:
+            </div>
+            <div class="col-lg-5">
+              {{product.productName}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+               Code:
+            </div>
+            <div class="col-lg-5">
+              {{product.productCode}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              Release Date:
+            </div>
+            <div class="col-lg-5">
+              {{product.releaseDate}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              Description:
+            </div>
+            <div class="col-lg-5">
+              {{product.description}}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2" >
+          <img [src]=" product.imageUrl" class="center-block img-responsive"
+               [style.width.px]="200"
+               [style.margin.px]="2"/>
+        </div>
+      </div>
+  </div>
+  <div class="panel-footer">
+    <a class="btn btn-default" (click)= "onBack()" style="width:80px">
+      <i class="glyphicon glyphicon-chevron-left">Back</i>
+    </a>
+    <a class="btn btn-default" (click)= "onEdit()" style="width:80px">
+      <i class="glyphicon glyphicon-chevron-left">Edit</i>
+    </a>
+  </div>
+</div>
