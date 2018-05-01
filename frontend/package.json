@@ -6,7 +6,8 @@
     "ng": "ng",
     "json-server": "json-server --watch db.json",
     "start": "ng serve -o",
-    "build": "ng build --base-href /app/v1/",
+    "build": "ng build --prod",
+    "local-build": "ng build --base-href /app/v1/frontend",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

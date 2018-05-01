@@ -17,7 +17,7 @@ gulp.task("triggerBuild", function () {
         stderr: true, // default = true, false means don't write stderr
         stdout: true // default = true, false means don't write stdout
     }
-    return gulp.src("./").pipe(exec("npm run build", options))
+    return gulp.src("./").pipe(exec("npm run local-build", options))
         .pipe(exec.reporter(reportOptions));
 
 })
