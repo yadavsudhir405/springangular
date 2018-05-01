@@ -14,7 +14,8 @@ export class ProductService {
     }
 
     getProducts(): Observable<IProduct[]> {
-      let url =  "/app/v1/iproducts";
+
+      let url =  "/app/v1/products";
       return this._httpClient.get<IProduct[]>(url)
         .do(data => {
             console.log("All :" + JSON.stringify(data));
@@ -24,7 +25,8 @@ export class ProductService {
     }
 
     getProductById(id: Number): Observable<IProduct> {
-      let url = "/app/v1/iproducts/"+id;
+
+      let url = "/app/v1/products/"+id;
       return this._httpClient.get<IProduct>(url)
           .do(data => {
             console.log("Product :" +JSON.stringify(data));
@@ -39,7 +41,8 @@ export class ProductService {
                 'Content-Type': 'application/json'
            })
        };
-       let url = "/app/v1/iproducts/"+product.productId;
+
+       let url = "/app/v1/products/"+product.productId;
         return  this._httpClient.delete(url, options);
 
     }

@@ -10,7 +10,7 @@ import java.util.List;
  * Created by sudhiry on 4/30/18.
  */
 @RestController
-@RequestMapping("/iproducts")
+@RequestMapping("/products")
 public class ProductResource {
 
     private final ProductService productService;
